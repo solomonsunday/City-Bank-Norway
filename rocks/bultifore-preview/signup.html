@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- responsive css -->
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="./customstyles.css">
 
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -47,23 +48,19 @@
                                     <form id="contactForm" method="POST" action="contact.php" class="log-form">
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Firstname</label>
-                                            <input type="text" id="name" class="form-control" placeholder="Firstname"
-                                                required data-error="Please enter your name">
+                                            <input type="text" id="name" class="form-control" placeholder="Firstname" required data-error="Please enter your name">
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Surname</label>
-                                            <input type="text" id="name" class="form-control" placeholder="Surname"
-                                                required data-error="Please enter your name">
+                                            <input type="text" id="name" class="form-control" placeholder="Surname" required data-error="Please enter your name">
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Othername</label>
-                                            <input type="text" id="name" class="form-control" placeholder="Othername"
-                                                required data-error="Please enter your name">
+                                            <input type="text" id="name" class="form-control" placeholder="Othername" required data-error="Please enter your name">
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Mother Maiden Name</label>
-                                            <input type="text" id="email" class="form-control" placeholder="Maiden Name"
-                                                required data-error="Please enter your name">
+                                            <input type="text" id="email" class="form-control" placeholder="Maiden Name" required data-error="Please enter your name">
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Gender</label>
@@ -76,24 +73,21 @@
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Date of Birth</label>
-                                            <div id="date-of-birth-example-1">
-                                                <fieldset>
-                                                    <div class="field-inline-block">
+                                            <div>
+                                                <fieldset class="fset">
+                                                    <div class="field-inline-block ">
                                                         <label>DD</label>
-                                                        <input type="text" pattern="[0-9]*" maxlength="2" size="2"
-                                                            class="date-field" />
+                                                        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field text-primary" />
                                                     </div>
                                                     /
-                                                    <div class="field-inline-block">
+                                                    <div class="field-inline-block ">
                                                         <label>MM</label>
-                                                        <input type="text" pattern="[0-9]*" maxlength="2" size="2"
-                                                            class="date-field" />
+                                                        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field text-primary" />
                                                     </div>
                                                     /
-                                                    <div class="field-inline-block">
+                                                    <div class="field-inline-block ">
                                                         <label>YYYY</label>
-                                                        <input type="text" pattern="[0-9]*" maxlength="4" size="4"
-                                                            class="date-field date-field--year" />
+                                                        <input type="text" pattern="[0-9]*" maxlength="4" size="4" class="date-field date-field--year text-primary" />
                                                     </div>
                                                     <p><small>E.g. 26/04/1980</small></p>
                                                 </fieldset>
@@ -104,18 +98,15 @@
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Occupation</label>
-                                            <input type="text" id="email" class="form-control" placeholder="Occupation"
-                                                required data-error="Please enter your Occupation">
+                                            <input type="text" id="email" class="form-control" placeholder="Occupation" required data-error="Please enter your Occupation">
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Email</label>
-                                            <input type="text" id="name" class="form-control" placeholder="Email"
-                                                required data-error="Please enter your Email">
+                                            <input type="text" id="name" class="form-control" placeholder="Email" required data-error="Please enter your Email">
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Nationality</label>
-                                            <input type="text" id="name" class="form-control" placeholder="Nationality"
-                                                required data-error="Please enter your Nationality">
+                                            <input type="text" id="name" class="form-control" placeholder="Nationality" required data-error="Please enter your Nationality">
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Location</label>
@@ -124,13 +115,11 @@
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Contact</label>
-                                            <input type="text" id="contact" class="form-control" placeholder="Contact"
-                                                required data-error="Please enter your contact">
+                                            <input type="text" id="contact" class="form-control" placeholder="Contact" required data-error="Please enter your contact">
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Contact 2</label>
-                                            <input type="text" id="cmsg_subject" class="form-control"
-                                                placeholder="Contact 2" required data-error="Please enter your contact">
+                                            <input type="text" id="cmsg_subject" class="form-control" placeholder="Contact 2" required data-error="Please enter your contact">
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Account Type</label>
@@ -156,8 +145,7 @@
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12">
                                             <label>Valid Date</label>
-                                            <input type="date" id="name" class="form-control" placeholder="Valid Date"
-                                                required data-error="Select a valid date">
+                                            <input type="date" id="name" class="form-control" placeholder="Valid Date" required data-error="Select a valid date">
                                         </div>
                                         <div class="col-md-4 col-sm-12 col-xs-12 text-center">
                                             <div class="check-group flexbox">
@@ -167,15 +155,14 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-sm-12 col-xs-12 text-center">
-                                            <button type="submit" id="submit"
-                                                class="slide-btn login-btn">Signup</button>
+                                        <div class="col-md-2 col-sm-12 col-xs-12 text-center pull-right">
+                                            <button type="submit" id="submit" class="slide-btn login-btn">Signup</button>
                                             <div id="msgSubmit" class="h3 text-center hidden"></div>
                                             <div class="clearfix"></div>
                                         </div>
                                         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                                             <div class="clear"></div>
-                                            <div class="separetor text-center"><span>Or with signup</span></div>
+                                            <div class="separetor text-center"><span>back to <a href="index.html">Home</a> </span></div>
                                             <div class="sign-icon">
                                                 <ul>
                                                     <li><a class="facebook" href="#"><i class="ti-facebook"></i></a>
@@ -208,6 +195,7 @@
     <script src="js/form-validator.min.js"></script>
     <!-- plugins js -->
     <script src="js/plugins.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
