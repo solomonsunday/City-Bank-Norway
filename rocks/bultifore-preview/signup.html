@@ -38,32 +38,128 @@
         <div class="login-overlay"></div>
         <div class="table">
             <div class="table-cell">
-                <div class="container">
+                <div class="">
                     <div class="row">
-                        <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-12">
+                        <div class="col-xs-12">
                             <div class="login-form signup-form">
                                 <h4 class="login-title text-center">REGISTER</h4>
                                 <div class="row">
                                     <form id="contactForm" method="POST" action="contact.php" class="log-form">
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <input type="text" id="name" class="form-control" placeholder="Username"
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Firstname</label>
+                                            <input type="text" id="name" class="form-control" placeholder="Firstname"
                                                 required data-error="Please enter your name">
                                         </div>
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <input type="email" id="email" class="form-control" placeholder="Your Email"
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Surname</label>
+                                            <input type="text" id="name" class="form-control" placeholder="Surname"
                                                 required data-error="Please enter your name">
                                         </div>
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <input type="password" id="msg_subject" class="form-control"
-                                                placeholder="Password" required
-                                                data-error="Please enter your message subject">
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Othername</label>
+                                            <input type="text" id="name" class="form-control" placeholder="Othername"
+                                                required data-error="Please enter your name">
                                         </div>
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <input type="password" id="cmsg_subject" class="form-control"
-                                                placeholder="Confirm Password" required
-                                                data-error="Please enter your message subject">
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Mother Maiden Name</label>
+                                            <input type="text" id="email" class="form-control" placeholder="Maiden Name"
+                                                required data-error="Please enter your name">
                                         </div>
-                                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Gender</label>
+                                            <select class="form-control" required data-error="Select Gender">
+                                                <option class="text-primary">Select</option>
+                                                <option class="text-primary">Male</option>
+                                                <option class="text-primary">Female</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Date of Birth</label>
+                                            <div id="date-of-birth-example-1">
+                                                <fieldset>
+                                                    <div class="field-inline-block">
+                                                        <label>DD</label>
+                                                        <input type="text" pattern="[0-9]*" maxlength="2" size="2"
+                                                            class="date-field" />
+                                                    </div>
+                                                    /
+                                                    <div class="field-inline-block">
+                                                        <label>MM</label>
+                                                        <input type="text" pattern="[0-9]*" maxlength="2" size="2"
+                                                            class="date-field" />
+                                                    </div>
+                                                    /
+                                                    <div class="field-inline-block">
+                                                        <label>YYYY</label>
+                                                        <input type="text" pattern="[0-9]*" maxlength="4" size="4"
+                                                            class="date-field date-field--year" />
+                                                    </div>
+                                                    <p><small>E.g. 26/04/1980</small></p>
+                                                </fieldset>
+                                            </div>
+                                            <!-- <input type="date" id="name" class="form-control"
+                                                placeholder="Date of Birth" required
+                                                data-error="Please enter date of birth"> -->
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Occupation</label>
+                                            <input type="text" id="email" class="form-control" placeholder="Occupation"
+                                                required data-error="Please enter your Occupation">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Email</label>
+                                            <input type="text" id="name" class="form-control" placeholder="Email"
+                                                required data-error="Please enter your Email">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Nationality</label>
+                                            <input type="text" id="name" class="form-control" placeholder="Nationality"
+                                                required data-error="Please enter your Nationality">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Location</label>
+                                            <textarea type="text" id="email" class="form-control">
+                                            </textarea>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Contact</label>
+                                            <input type="text" id="contact" class="form-control" placeholder="Contact"
+                                                required data-error="Please enter your contact">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Contact 2</label>
+                                            <input type="text" id="cmsg_subject" class="form-control"
+                                                placeholder="Contact 2" required data-error="Please enter your contact">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Account Type</label>
+                                            <select class="form-control" required data-error="Select Gender">
+                                                <option class="text-primary">Select Option</option>
+                                                <option class="text-primary">Instance Savings AC</option>
+                                                <option class="text-primary">Instance Current AC</option>
+                                                <option class="text-primary">Instance Children AC</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Personal ID</label>
+                                            <select class="form-control" required data-error="Select Gender">
+                                                <option class="text-primary">Select Option</option>
+                                                <option class="text-primary">Drinvers ID</option>
+                                                <option class="text-primary">Voters ID</option>
+                                                <option class="text-primary">National ID</option>
+                                                <option class="text-primary">Student ID</option>
+
+                                            </select>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <label>Valid Date</label>
+                                            <input type="date" id="name" class="form-control" placeholder="Valid Date"
+                                                required data-error="Select a valid date">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12 text-center">
                                             <div class="check-group flexbox">
                                                 <label class="check-box">
                                                     <input type="checkbox" class="check-box-input" checked>
@@ -71,7 +167,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <div class="col-md-4 col-sm-12 col-xs-12 text-center">
                                             <button type="submit" id="submit"
                                                 class="slide-btn login-btn">Signup</button>
                                             <div id="msgSubmit" class="h3 text-center hidden"></div>
