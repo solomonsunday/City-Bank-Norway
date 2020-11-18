@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Transection Log | Bultifore</title>
+    <title>Upload-Image| Bultifore</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="css/magnific.min.css">
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./customstyles.css">
+
     <!-- responsive css -->
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -61,11 +63,11 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="breadcrumb text-center">
                         <div class="section-headline white-headline text-center">
-                            <h3>Transection Log</h3>
+                            <h3>Upload Image</h3>
                         </div>
                         <ul>
                             <li class="home-bread">Dashboard</li>
-                            <li>Transection Log</li>
+                            <li>Upload Image</li>
                         </ul>
                     </div>
                 </div>
@@ -133,16 +135,14 @@
                         <div class="dashboard-side">
                             <ul>
                                 <li><a href="a-dashboard.html"><i class="ti-dashboard"></i>Dashboard</a></li>
-                                <li><a href="a-send-money.html"><i class="ti-new-window"></i>Send Money</a></li>
-                                <li><a href="a-request-atm-chequebook.html"><i class="ti-receipt"></i>Request ATM</a></li>
-                                <!-- <li><a href="a-withdraw-money.html"><i class="ti-import"></i>Withdraw Money</a></li> -->
-                                <!-- <li><a href="a-deposite-money.html"><i class="ti-wallet"></i>Deposite Money</a></li> -->
-                                <!-- <li><a href="a-currency-change.html"><i class="ti-stats-up"></i>Currency Exchange</a> -->
+                                <li class="active"><a href="a-send-money.html"><i class="ti-new-window"></i>Send
+                                        Money</a></li>
+                                <li><a href="a-request-atm-chequebook.html"><i class="ti-receipt"></i>Request Atm</a></li>
                                 </li>
                                 <li><a href="a-add-bank.html"><i class="ti-pencil-alt"></i>Account Details</a></li>
                                 <!-- <li><a href="a-card-number.html"><i class="ti-credit-card"></i>Card Number</a></li> -->
-                                <li class="active"><a href="a-transection-log.html"><i
-                                            class="ti-layout-list-thumb"></i>Transection Log</a></li>
+                                <li><a href="a-transection-log.html"><i class="ti-layout-list-thumb"></i>Transection
+                                        Log</a></li>
                                 <li><a href="a-setting-money.html"><i class="ti-settings"></i>Settings</a></li>
                             </ul>
                         </div>
@@ -160,54 +160,26 @@
                     <div class="dashboard-content">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="send-money-form transection-log">
+                                <div class="send-money-form">
                                     <div class="form-text">
-                                        <h4 class="form-top">Transection Log</h4>
-                                        <div class="form-inner table-inner">
-                                            <table>
-                                                <tr>
-                                                    <th>Date</th>
-                                                    <th>Description</th>
-                                                    <th>Status</th>
-                                                    <th>Amount</th>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jan 04, 2020</td>
-                                                    <td>U.N.C Bank LTD</td>
-                                                    <td>Send Money</td>
-                                                    <td>$500</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jan 04, 2020</td>
-                                                    <td>U.N.C Bank LTD</td>
-                                                    <td>Send Money</td>
-                                                    <td>$500</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jan 04, 2020</td>
-                                                    <td>U.N.C Bank LTD</td>
-                                                    <td>Send Money</td>
-                                                    <td>$500</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jan 04, 2020</td>
-                                                    <td>U.N.C Bank LTD</td>
-                                                    <td>Send Money</td>
-                                                    <td>$500</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jan 04, 2020</td>
-                                                    <td>U.N.C Bank LTD</td>
-                                                    <td>Send Money</td>
-                                                    <td>$500</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jan 04, 2020</td>
-                                                    <td>U.N.C Bank LTD</td>
-                                                    <td>Send Money</td>
-                                                    <td>$500</td>
-                                                </tr>
-                                            </table>
+                                        <h4 class="form-top">Upload Image</h4>
+                                        <div class="form-inner">
+                                            <form action="#">
+                                                <div class="row">
+                                                    <div class="small-12 medium-2 large-2 columns">
+                                                        <div class="circle">
+                                                            <img class="profile-pic" src="/img/about/uploadImg.png" width="112px" ;height="12px">
+                                                        </div>
+                                                        <div class="p-image upload-input">
+                                                            <i class="icon-camera camera-icon"></i>
+                                                            <input class="file-upload" type="file" accept="image/*" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-12 pull-right">
+                                                    <button type="submit" class="submit-btn">Submit</button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
